@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes WebApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>Notes</h1>
+        </div>
+        <div class="notes-div">
+            <div>
+                <input type="text" id="title" placeholder="Title" required>
+            </div>
+            <div>
+                <textarea name="notes" id="notes" rows="4" cols="30" placeholder="Your Notes"></textarea>
+            </div>
+            <button class="btn" id="btn">Add Note</button>
+        </div>
+        <div class="saved-notes-div">
+            <h1>Your Notes</h1>
+            <hr>
+            <div class="saved-notes" id="saved-notes-div">
+                <small class="no-note">Nothing to show! Use "Add Note" Section for creating your notes</small>
+                <!-- <div class="note" id="saved-notes">
+                    <h3 id="note-title">Title</h3>
+                    <p id="note-desc">Some notes</p>
+                    <div class="buttons">
+                        <button id="delete" class="delete-btn">Delete Note</button>
+                        <button id="edit" class="edit-btn">Edit Note</button>
+                    </div>
+                    <small id="date"></small>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
